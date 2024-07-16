@@ -1,0 +1,38 @@
+#key{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* gap: 4px; */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#Calculator{
+    /* max-width: 220px; */
+    width: 17%;
+    border: 4 solid rgb(227, 115, 16);
+    height: 70%;
+    background-color: black;
+    border-radius: 10%;
+}
+
+button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2 solid black;
+    background-color: orange;
+}
+
+#display{
+    color: white;
+    width: 160px ;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+
+
+}
