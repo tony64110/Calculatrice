@@ -10,6 +10,7 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #Calculator{
@@ -55,4 +56,42 @@ button{
     border: none;
 
 
+}
+@media (max-width: 768px) {
+    #Calculator {
+        width: 80%;
+    }
+    #key {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2%;
+    }
+    button {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    #display {
+        width: 80%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #Calculator {
+        width: 70%;
+        height: 230px;
+    }
+    #key {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2%;
+    }
+    button {
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    #display {
+        width: 80%;
+        padding: 10px;
+        font-size: 1rem;
+    }
 }
